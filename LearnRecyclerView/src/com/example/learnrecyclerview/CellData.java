@@ -8,5 +8,6 @@ public class CellData {
 	}
 	public String title = "title";
 	public String content = "content";
+        public static final String STR = "just a test";
 
 }
