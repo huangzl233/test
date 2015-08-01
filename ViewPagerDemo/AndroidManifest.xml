@@ -17,10 +17,12 @@
             android:name=".MainActivity"
             android:label="@string/app_name" >
         </activity>
-        <activity android:name=".Welcome" >
-        </activity>
+      
         <activity android:name=".Guide" >
-            <intent-filter>
+          
+        </activity>
+        <activity android:name=".Welcome">
+              <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
 
                 <action android:name="android.intent.action.MAIN" >
