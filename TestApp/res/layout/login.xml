@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1d94d7" >
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/img2" />
+
+    <LinearLayout
+        android:id="@+id/liner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:background="#1e93d6"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:background="#fbfbfb"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/ed1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:hint="   输入qq号码"
+                android:textColorHint="#F0f0f0" 
+                android:ems="10"
+                android:imeOptions ="actionDone" >
+                <requestFocus></requestFocus>
+                </EditText>
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/show1"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#ffc0c3c4" />
+
+        <EditText
+            android:id="@+id/ed2"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:background="#fbfbfb"
+            android:inputType="textPassword"
+           
+            android:maxLength="16"
+            android:maxLines="1"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        
+        android:layout_height="50dp"
+        android:layout_below="@+id/liner1"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/buttonskin"
+        android:gravity="center"
+        android:text="LOGIN" />
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/liner1"
+        android:layout_alignRight="@+id/liner1"
+        android:layout_below="@+id/login" >
+
+        <CheckBox
+            android:id="@+id/auto_save_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="16dp"
+         
+            android:checked="true"
+            
+            android:drawablePadding="4.0dip"
+            android:text="记住密码"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp" />
+
+        <Button
+            android:id="@+id/regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#1388cb"
+            android:clickable="true"
+            android:layout_marginTop="35dp"
+            android:gravity="left|center"
+            android:paddingLeft="8.0dip"
+            android:paddingRight="18.0dip"
+            android:text="注册新账号"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp" />
+    </RelativeLayout>
+    <LinearLayout 
+        android:id="@+id/liner2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#0069a6"
+        android:orientation="vertical">
+        <TextView 
+            android:id="@+id/showmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="更多登陆选项"
+            android:textSize="20sp"
+            android:textColor="#ffc6e6f9"
+            
+            />
+        <LinearLayout 
+            android:id="@+id/liner3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <View 
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ff005484"
+                />
+            <View 
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ff0883cb"/>
+            <LinearLayout 
+                android:id="@+id/liner4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
+               >
+                <CheckBox 
+                    android:id="@+id/hidden"
+                    android:layout_width="1px"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    
+                    android:checked="false"
+                    android:text="隐身登陆"
+                    android:textSize="12sp"
+                    android:textColor="#ffc6e6f9"/>
+                 <CheckBox 
+                    android:id="@+id/silence"
+                    android:layout_width="1px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="静音登陆"
+                    android:textSize="12sp"
+                  
+                    android:textColor="#ffc6e6f9"/>
+            </LinearLayout>
+             <LinearLayout 
+                android:id="@+id/liner5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="18dp"
+                >
+                <CheckBox 
+                    android:id="@+id/moblie"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="允许手机/电脑同时在线"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:textColor="#ffc6e6f9"/>
+                 <CheckBox 
+                    android:id="@+id/accept"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="接受群消息信息"
+                    android:singleLine="true"
+                    android:textSize="12sp"
+                   
+                    android:textColor="#ffc6e6f9"/>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
